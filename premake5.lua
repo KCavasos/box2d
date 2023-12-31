@@ -9,14 +9,14 @@ project "Box2D"
 	files
 	{
 		"include/box2d/**.h",
-		"src/**.cpp"
-		"src/**.h"
+		"src/**.cpp",
+		"src/**.h",
 	}
 
 	includedirs
 	{
-		"include/box2d",
-		"src"
+		"include",
+		"src",
 	}
 
 	filter "system:windows"
