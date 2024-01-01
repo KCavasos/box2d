@@ -6,3 +6,6 @@ CMakeSettings.json
 out/
 .vs/
 bin-intermediates
+*.vcxproj
+*.vcxproj.filters
+bin/
