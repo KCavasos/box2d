@@ -1,7 +1,8 @@
 project "Box2D"
 	kind "StaticLib"
-	language "C"
-	staticruntime "Off"
+	language "C++"
+	cppdialect "C++11"
+	staticruntime "On"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-intermediates/" .. outputdir .. "/%{prj.name}")
