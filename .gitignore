@@ -2,10 +2,15 @@ build/
 imgui.ini
 settings.ini
 .vscode/
-CMakeSettings.json
-out/
 .vs/
+.cap
+.DS_Store
+CMakeUserPresets.json
+.cache/
 bin-intermediates
 *.vcxproj
 *.vcxproj.filters
 bin/
+
+
+
