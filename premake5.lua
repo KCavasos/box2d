@@ -1,7 +1,10 @@
 project "Box2D"
+	architecture "x64"
+
 	kind "StaticLib"
 	language "C++"
-	cppdialect "C++11"
+	cppdialect "C++17"
+	cdialect "C17"
 	staticruntime "On"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
@@ -10,14 +13,22 @@ project "Box2D"
 	files
 	{
 		"include/box2d/**.h",
+		"include/box2d/**.cpp",
 		"src/**.cpp",
 		"src/**.h",
+		"src/**.c",
+		"premake5.lua"
 	}
 
 	includedirs
 	{
 		"include",
 		"src",
+	}
+
+	buildoptions
+	{
+		"/experimental:c11atomics"
 	}
 
 	filter "system:windows"
